@@ -1,0 +1,45 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+
+    /* Enable TSX/JSX */
+    "jsx": "react-jsx",
+    "allowJs": true,
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+
+    // allow importing .js/.jsx files
+    "allowJs": true,
+    // emit JS with React’s new JSX transform (or "react" if you’re on the old runtime)
+    "jsx": "react-jsx",
+    // (optional) if you want to import without specifying the extension:
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "lib": [
+      "dom",
+      "es2021",       // or "es2022"
+      "es2021.intl"   // <-- adds Intl.Segmenter, Intl.ListFormat, etc.
+    ]
+  },
+  
+  "include": ["src/**/*"]
+}

@@ -1,0 +1,102 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+#root {
+  max-width: 1280px;
+  margin: 0 ;
+  padding: 2rem 4rem 2rem 4rem;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: none;
+  
+}
+a{
+  color: white;
+}
+main{
+  width: 100%;
+  
+}
+@layer base {
+  html, body {
+    overflow-x: hidden;
+  }
+}
+
+@keyframes fadeIn {
+  from { 
+    opacity: 0;
+
+
+  }
+  to { opacity: 1; }
+ }
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn2 {
+  from { 
+    opacity: 0.7;
+    
+
+    
+  }
+  to { opacity: 1;
+       width: 500px;
+       height: 500px;
+  }
+    }
+.fade-in2 {
+  animation: fadeIn2 2s ease-in-out;
+}
+.disintegrate-wrapper {
+  position: absolute;  /* so fragments sit on top */
+  display: inline-block;
+}
+
+.capture-canvas {
+  position: absolute;
+  top: 0; left: 0;
+  pointer-events: none;
+}
+
+
+
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
