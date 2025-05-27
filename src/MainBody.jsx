@@ -98,14 +98,15 @@ return (
           flex-col
           
         ">
-    <div className='grid  grid-cols-3 pb-18 '>
+    
+    <div className='flex flex-row pb-18 w-full'>
       <div
-        className="flex flex-col   sm:mt-10 sm:top-30 lg:mt-30 lg:top-30   justify-center sm:items-start   lg:mt-10 sm:text-start">
+        className="flex flex-col   sm:mt-10 sm:top-30 xl:mt-30 xl:top-30   justify-center sm:items-start   xl:mt-10 sm:text-start">
         <h1 ref={el}
-          className="text-center tracking-wide text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl sm:text-left">
+          className="text-center tracking-wide text-xl sm:text-2xl md:text-4xl xl:text-5xl xl:text-6xl sm:text-left">
           DIGITAL <br />INVITATION
         </h1>
-        <p ref={el2} className="sm:w-50 lg:w-100 lg:text-lg text-sm text-center pt-3  sm:text-left">
+        <p ref={el2} className="sm:w-50 xl:w-100 xl:text-lg text-sm text-center pt-3  sm:text-left">
           EXPLORE FANTACY NICE DESIGN TEMPLATE TO INVITATION
         </p>
 
@@ -130,14 +131,14 @@ return (
 
       <Fanish>
         <div
-          className='sm:ml-70 lg:ml-130  flex justify-center aligns-center items-center rounded-full overflow-hidden'>
-          <img src={mainImg} alt="Main illustration" className='sm:w-50 sm:h-70 lg:w-90 lg:h-130  bg-[#306D5A]' />
+          className='sm:ml-70 lg:ml-80 xl:ml-130  flex justify-center aligns-center items-center rounded-full overflow-hidden'>
+          <img src={mainImg} alt="Main illustration" className='sm:w-50 sm:h-70 lg:w-60 lg:h-80 xl:w-90 xl:h-130  bg-[#306D5A]' />
         </div>
       </Fanish>
 
-      <div className='flex flex-col ml-120 w-full mt-30 items-start'>
+      <div className='flex flex-col sm:ml-0 lg:ml-96  xl:ml-150 w-20 mt-30 lg:mt-10 xl:mt-30 items-start'>
         <SlideDown delay={1.2}>
-          <p className='text-left w-60 text-lg'>Do you want contact us <br />Our social media</p>
+          <p className='text-left w-60 text-lg '>Do you want contact us <br />Our social media</p>
         </SlideDown>
 
         <SlideDown delay={2} yFrom={-20}>
@@ -171,12 +172,12 @@ return (
     </div>
 
 
-    <div className="flex flex-row justify-center items-center min-h-screen w-full pl-0 -ml-16 gap-40">
+    <div className="flex flex-row justify-center items-center min-h-screen w-full pl-0 -ml-16 gap-40 lg:gap-20 xl:gap-40 ">
 
       <SlideUp delay={.2}>
         <div className="flex justify-center items-center flex-col pb-30">
           <div className='overflow-hidden rounded-t-full shadow-md '>
-            <img src={temp1} alt="" className='w-70 h-110  o' />
+            <img src={temp1} alt="" className='w-70 h-110 lg:w-60 lg:h-100 xl:w-70 xl:h-110  o' />
           </div>
           <h1 className='pt-5 text-2xl'>Template 1</h1>
         </div>
@@ -184,7 +185,7 @@ return (
       <SlideDown delay={.3}>
         <div className="flex justify-center items-center flex-col pt-10">
           <div className='overflow-hidden rounded-t-full '>
-            <img src={temp1} alt="" className='w-70 h-110  o' />
+            <img src={temp1} alt="" className='w-70 h-110 lg:w-60 lg:h-100 xl:w-70 xl:h-110  o' />
           </div>
           <h1 className='pt-5 text-2xl'>Template 1</h1>
           <a href="#" className="
@@ -210,34 +211,34 @@ return (
       <SlideUp delay={.2}>
         <div className="flex justify-center items-center flex-col pb-30">
           <div className='overflow-hidden rounded-t-full '>
-            <img src={temp1} alt="" className='w-70 h-110  o' />
+            <img src={temp1} alt="" className='w-70 h-110 lg:w-60 lg:h-100 xl:w-70 xl:h-110  o' />
           </div>
           <h1 className='pt-5 text-2xl'>Template 1</h1>
         </div>
       </SlideUp>
     </div>
 
-    <div className="flex flex-row justify-center items-center  w-full pl-0 -ml-16 gap-40 pt-20">
+    <div className="flex flex-row justify-center items-center  w-full pl-0 -ml-16 gap-40 lg:gap-10 xl:gap-40 pt-20">
       <div className='grid grid-cols-5 gap-10'>
         <SlideUp delay={.3}>
-          <div className='w-50 h-50 bg-[#306D5A] rounded-2xl overflow-hidden'>
+          <div className='w-50 h-50 lg:w-40 lg:h-40 xl:w-50 xl:h-50 bg-[#306D5A] rounded-2xl overflow-hidden'>
             <img src={dress} alt="" className='p-7 invert' />
           </div>
         </SlideUp>
 
         <SlideUp delay={.1}>
-          <div className='w-50 h-50 bg-[#306D5A] rounded-2xl overflow-hidden'>
+          <div className='w-50 h-50 lg:w-40 lg:h-40 xl:w-50 xl:h-50 bg-[#306D5A] rounded-2xl overflow-hidden'>
             <img src={dress} alt="" className='p-7 invert' />
           </div>
         </SlideUp>
         <h1 className='text-3xl font-semibold pt-[30%]'>OTHER <br />SERVICE</h1>
         <SlideUp delay={.1}>
-          <div className='w-50 h-50 bg-[#306D5A] rounded-2xl overflow-hidden'>
+          <div className='w-50 h-50 lg:w-40 lg:h-40 xl:w-50 xl:h-50 bg-[#306D5A] rounded-2xl overflow-hidden'>
             <img src={dress} alt="" className='p-7 invert' />
           </div>
         </SlideUp>
         <SlideUp delay={.3}>
-          <div className='w-50 h-50 bg-[#306D5A] rounded-2xl overflow-hidden'>
+          <div className='w-50 h-50 lg:w-40 lg:h-40 xl:w-50 xl:h-50 bg-[#306D5A] rounded-2xl overflow-hidden'>
             <img src={dress} alt="" className='p-7 invert' />
           </div>
         </SlideUp>
@@ -249,12 +250,12 @@ return (
 
       <div class="relative w-full md:w-1/2 flex justify-center items-center mb-6 md:mb-0 flex-row">
         <SlideDown delay={0.3}>
-          <div class="relative w-40 h-60 mr-5">
+          <div class="relative w-40 h-60 lg:w-40 lg:h-40 xl:w-40 xl:h-60 mr-5">
             <img src={photo} alt="Photographer Sample" class="rounded-3xl shadow-lg object-cover w-full h-full  " />
           </div>
         </SlideDown>
         <SlideUp delay={0.2}>
-          <div class="relative w-60 h-80 ">
+          <div class="relative w-60 h-80 lg:w-50 lg:h-50 xl:w-60 xl:h-80 ">
             <img src={photo} alt="Photographer Sample" class="rounded-3xl shadow-lg object-cover w-full h-full  " />
           </div>
         </SlideUp>
